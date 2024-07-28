@@ -802,3 +802,81 @@ ul li a:hover {
 .program-card:hover .program-photo {
   transform: scale(1.1);
 }
+
+/* Vision and Mission Section */
+#vision-mission {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#vision-mission .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#vision-mission h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+  position: relative;
+}
+
+#vision-mission h2:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #4CAF50;
+  margin: 10px auto;
+}
+
+#vision-mission p {
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.6;
+}
+
+#vision-mission ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#vision-mission ul li {
+  font-size: 1.1em;
+  color: #666;
+  margin: 10px 0;
+}
+
+#vision-mission ul li strong {
+  color: #333;
+}
+
+body.dark-mode #vision-mission {
+  background-color: #333;
+  color: #f9f9f9;
+}
+
+body.dark-mode #vision-mission h2 {
+  color: #f9f9f9;
+}
+
+body.dark-mode #vision-mission h2:after {
+  background: #FF9800;
+}
+
+body.dark-mode #vision-mission p {
+  color: #ddd;
+}
+
+body.dark-mode #vision-mission ul li {
+  color: #ccc;
+}
+
+body.dark-mode #vision-mission ul li strong {
+  color: #fff;
+}
