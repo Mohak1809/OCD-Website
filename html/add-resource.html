@@ -59,9 +59,9 @@
     <div class="main-content">
 
         <!-- Add Resource Section -->
-        <section class="add-resource hidden">
+        <section class="add-resource">
             <h1>Add New Resource</h1>
-            <form id="resource-form">
+            <form id="resource-form" method="post" action="http://localhost:5000/create"> <!-- This url need to be change for deployment, currently it is set for local machine -->
                 <div class="label">
                     <label for="title">Title:</label>
                     <input type="text" id="title" name="title" required>

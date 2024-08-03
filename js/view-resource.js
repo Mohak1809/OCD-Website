@@ -1,10 +1,19 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
     const resourceLibrarySection = document.getElementById("resource-library");
     const resourceContainer = document.getElementById("resource-container");
     const search_btn=document.getElementById("search-button");
     const clear_btn=document.getElementById("clear-button");
 
-    const resources = JSON.parse(localStorage.getItem("resources")) || [];
+    // const resources = JSON.parse(localStorage.getItem("resources")) || [];
+    async function getresources(){
+        const promise = await fetch('http://localhost:5000/view'); /* This url to be change for deployment, currently it is set for working on local machine */
+        if (!promise.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return await promise.json();
+    }
+
+    const resources=await getresources();
 
     function renderResources() {
         resourceContainer.innerHTML = "";

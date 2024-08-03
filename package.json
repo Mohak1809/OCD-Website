@@ -1,0 +1,12 @@
+{
+  "name": "ocd-website",
+  "version": "1.0.0",
+  "description": "Our society is dedicated to fostering a vibrant community of passionate individuals interested in data structures and algorithms, as well as software development from NIT Kurukshetra. We engage in daily DSA question solving and discussions, CP discussions, and Development Projects providing a platform for members to enhance their problem-solving skills and learn from each other's approaches.  Our community is built on the principles of collaboration, innovation, and mutual growth, and we strive to create a supportive environment that encourages members to push their limits and explore new ideas.",
+  "main": "server.js",
+  "scripts": {
+    "install:all": "\"cd Server && npm install\"",
+    "start": "node Server/server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
